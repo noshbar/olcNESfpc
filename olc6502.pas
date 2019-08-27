@@ -135,7 +135,7 @@ type
   Tolc6502 = class(TObject)
     public
       constructor Create();
-      destructor Destroy();
+      destructor Destroy(); override;
 
     public
       // CPU Core registers, exposed as public here for ease of access from external
@@ -337,7 +337,8 @@ end;
 
 destructor Tolc6502.Destroy();
 begin
-	// Destructor - has nothing to do
+	mapLines.Free;
+  sourceDump.Free;
 end;
 
 

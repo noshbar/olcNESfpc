@@ -10,5 +10,6 @@ object frmMain: TfrmMain
   OnCreate = FormCreate
   OnKeyPress = FormKeyPress
   OnPaint = FormPaint
+  LCLVersion = '1.8.4.0'
   Visible = False
 end

@@ -13,7 +13,7 @@ type
   TBus = class(TObject)
   public
     constructor Create();
-    destructor Destroy();
+    destructor Destroy(); override;
 
   public
     cpu: Tolc6502;
@@ -51,6 +51,8 @@ end;
 
 procedure TBus.write(addr: word; Data: byte);
 begin
+  //DDLH: the address will ALWAYS be within this range, because of its type.
+  // Should it be an integer so we can check for mistakes?
   if (addr >= $0000) and (addr <= $FFFF) then
   begin
     ram.Position := addr;

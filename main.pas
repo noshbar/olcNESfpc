@@ -216,13 +216,13 @@ begin
       nes.cpu.clock();
     until nes.cpu.complete();
 
-  if (Key = 'r') then
+  if (UpperCase(Key) = 'R') then
     nes.cpu.reset();
 
-  if (Key = 'i') then
+  if (UpperCase(Key) = 'I') then
     nes.cpu.irq();
 
-  if (Key = 'n') then
+  if (UpperCase(Key) = 'N') then
     nes.cpu.nmi();
 
   Repaint;
