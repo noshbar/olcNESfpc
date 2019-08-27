@@ -1,0 +1,14 @@
+object frmMain: TfrmMain
+  Left = 0
+  Height = 1378
+  Top = 0
+  Width = 2135
+  Caption = 'frmMain'
+  ClientHeight = 1378
+  ClientWidth = 2135
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnPaint = FormPaint
+  Visible = False
+end
