@@ -2,7 +2,7 @@
 NES Emulator, and Tutorial Video Code - ported to Object Pascal.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8XmxKPJDGU0/0.jpg)](https://www.youtube.com/watch?v=8XmxKPJDGU0)
 
-This is a rather quick port of the 6502 emulator from C++ to Object Pascal, or more specifically, FreePascal in Lazarus form.
+This is a rather quick port of the [olc 6502 emulator](https://github.com/OneLoneCoder/olcNES) from C++ to Object Pascal, or more specifically, FreePascal in Lazarus form.
 While I made an effort to cater for what I remember from Delphi, minor work will have to be done to get it to work.
 
 I tried to keep everything as similar to the original C++ code, but had to make a few changes here and there to get things to work, such as:
